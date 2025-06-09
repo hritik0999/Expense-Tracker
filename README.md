@@ -19,3 +19,11 @@ Install Angular CLI globally (if not already):
 
 ```bash
 npm install -g @angular/cli
+
+### 2. Inside folder expense tracker in a code terminal
+
+Use command npm install to install node modules
+
+### 3. Start the project
+
+use command npm start to start project
