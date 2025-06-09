@@ -1,0 +1,20 @@
+<table>
+    <thead>
+      <tr>
+        <th (click)="setSort('description')">Description</th>
+        <th (click)="setSort('amount')">Amount</th>
+        <th (click)="setSort('category')">Category</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of sortedExpenses()">
+        <td>{{ e.description }}</td>
+        <td>{{ e.amount }}</td>
+        <td>
+          {{ e.category }}
+        </td>
+        <td>{{ e.createdAt | date:'short' }}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,12 @@
+<form (ngSubmit)="addExpense()">
+    <input [(ngModel)]="description" name="desc" placeholder="Description" />
+    <input type="number" [(ngModel)]="amount" name="amount" placeholder="Amount" required />
+    <select [(ngModel)]="category" name="category">
+      <option value="">Auto</option>
+      <option>Food</option>
+      <option>Travel</option>
+      <option>Entertainment</option>
+      <option>Grocery</option>
+    </select>
+    <button type="submit" [disabled]="!amount">Add</button>
+  </form>
